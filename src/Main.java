@@ -1,5 +1,4 @@
 import Models.Editorial;
-
 import java.io.IOException;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -9,12 +8,12 @@ public class Main {
 
         Editorial editorial = new Editorial();
         //editorial.CreateAndSave();
-        System.out.println("------------------");
+        System.out.println("------MUESTRA LISTA------------");
         editorial.ShowList();
-        System.out.println("------------------");
+        System.out.println("-------JSON-----------");
         editorial.JsonToList();
         System.out.println("------------------");
-        editorial.DeleteInJson(" Anteojito ");
+        editorial.DeleteInJson(" Billiken ");
     }
 
 }

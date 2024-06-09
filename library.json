@@ -1,0 +1,26 @@
+[
+  {
+    "name": " The Lord of the ring ",
+    "editorial": " Planet ",
+    "edition": 2010,
+    "author": " Tolkien "
+  },
+  {
+    "name": " Harry Potter ",
+    "editorial": " Planet ",
+    "edition": 2012,
+    "author": " J.K. Rowling "
+  },
+  {
+    "name": " Billiken ",
+    "editorial": " Orsai",
+    "edition": 1995,
+    "id": 12
+  },
+  {
+    "name": " mafalda ",
+    "editorial": " Ediciones de la flor",
+    "edition": 1994,
+    "id": 9
+  }
+]
