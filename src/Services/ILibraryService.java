@@ -2,6 +2,7 @@ package Services;
 
 import Models.Library;
 
+import java.util.LinkedHashMap;
 import java.util.List;
 
 public interface ILibraryService {
@@ -11,4 +12,7 @@ public interface ILibraryService {
     public void CreateBook(String name, String editorial, Integer edition, String author);
 
     public List<Library> getLibraryList();
-}
+
+    void HashToList(List<LinkedHashMap<String, Object>> linkedHashMap);
+
+    }

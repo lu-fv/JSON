@@ -33,11 +33,19 @@ public class FileServiceImpl<T> {
     }
 
 
-    public void Delete(T t) {
+ /*   public void Delete(T t) throws IOException {
+        List<T> tlist = this.Lists();
+        for (T l : tlist) {
+            if (l.equals(t)) {
+                tlist.remove(t);
 
-    }
+            }
+        }
+        this.Add(tlist);
 
-    public  List<T> Lists() throws IOException {
+    }*/
+
+    public List<T> Lists() throws IOException {
         List tList = new ArrayList<>();
         try {
             tList = this.mapper.readValue(new File(this.pathname), List.class);

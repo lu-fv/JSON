@@ -3,9 +3,9 @@ package Services.impl;
 import Models.*;
 import Services.*;
 
+import java.io.IOException;
 import java.io.InvalidObjectException;
 import java.util.*;
-
 
 public class LibraryServiceImpl implements ILibraryService {
 
@@ -65,5 +65,15 @@ public class LibraryServiceImpl implements ILibraryService {
 
     public List<Library> getLibraryList() {
         return libraryList;
+    }
+
+    public void HashToList(List<LinkedHashMap<String, Object>> linkedHashMap) {
+        linkedHashMap.forEach((x) -> {
+            if (x.containsKey("id")) {
+               this.CreateMagazine(x.get("name").toString(), x.get("editorial").toString(), (Integer) x.get("edition"), (Integer) x.get("id"));
+            } else {
+               this.CreateBook(x.get("name").toString(), x.get("editorial").toString(), (Integer) x.get("edition"), x.get("author").toString());
+            }
+        });
     }
 }
