@@ -14,6 +14,7 @@ public class Main {
         editorial.JsonToList();
         System.out.println("------------------");
         editorial.DeleteInJson(" Billiken ");
+        editorial.ShowList();
     }
 
 }
